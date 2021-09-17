@@ -1,6 +1,6 @@
 <?php
  
-
+//queueing JS and CSS to wp
  
 function inl_enqueue(){
  
@@ -15,5 +15,5 @@ function inl_enqueue(){
  wp_enqueue_style('inl_style');
  
 }
- 
+  
 ?>

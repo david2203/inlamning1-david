@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="row">
 				<div id="primary" class="col-xs-12 col-md-9">
-					<h1>Blogg</h1>
+					
 
                     
 					<?php /* Code for the loop */if (have_posts()) :
@@ -13,6 +13,7 @@
 						while (have_posts()) : the_post();
 
 					?>
+					<h1> <?php the_author() ?></h1>
 							<article>
 								<img src="<?php /* Fetches the thumbnail url for chosen posts */ echo get_the_post_thumbnail_url(); ?>" />
 								<a href="<?php /* Fetches the permalink for chosen posts */ the_permalink(); ?>">
@@ -80,7 +81,7 @@
 								<h2>Arkiv</h2>
 								<ul>
 									<li>
-									<a href="<?php echo get_home_url();?>/archive.php/blogg?m=201610">Oktober 2016</a>
+										<a href="arkiv.html">oktober 2016</a>
 									</li>
 								</ul>
 							</li>
